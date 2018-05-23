@@ -7,7 +7,10 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 import java.beans.PropertyVetoException;
-
+/**
+ * @Author: 程荣凯
+ * @Date: 2018/5/23 14:54
+ */
 @Configuration
 @MapperScan("com.example.demo.dao")
 public class DataSourceConfigure {

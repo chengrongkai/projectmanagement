@@ -10,7 +10,10 @@ import org.springframework.core.io.support.PathMatchingResourcePatternResolver;
 import javax.annotation.Resource;
 import javax.sql.DataSource;
 import java.io.IOException;
-
+/**
+ * @Author: 程荣凯
+ * @Date: 2018/5/23 14:54
+ */
 @Configuration
 public class SessionFactoryConfigure {
     @Value("${mybatis.ConfigFilePath}")

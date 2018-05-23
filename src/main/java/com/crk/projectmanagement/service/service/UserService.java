@@ -3,7 +3,10 @@ package com.crk.projectmanagement.service.service;
 import com.crk.projectmanagement.entity.UserInfo;
 
 import java.util.List;
-
+/**
+ * @Author: 程荣凯
+ * @Date: 2018/5/23 14:54
+ */
 public interface UserService {
     /**
      * 获取所有用户信息

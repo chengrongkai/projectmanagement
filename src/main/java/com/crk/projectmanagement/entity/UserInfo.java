@@ -1,19 +1,34 @@
 package com.crk.projectmanagement.entity;
 
 import java.util.Date;
-
+/**
+ * @Author: 程荣凯
+ * @Date: 2018/5/23 14:54
+ */
 public class UserInfo {
-    //用户ID
+    /**
+     * 用户ID
+     */
     private Integer userId;
-    //用户名称
+    /**
+     * 用户名称
+     */
     private String userName;
-    //用户密码
+    /**
+     * 密码
+     */
     private String password;
-    //用户手机号
+    /**
+     * 手机号
+     */
     private String phone;
-    //创建时间
+    /**
+     * 创建时间
+     */
     private Date createTime;
-    //修改时间
+    /**
+     * 修改时间
+     */
     private Date updateTime;
 
     public Integer getUserId() {

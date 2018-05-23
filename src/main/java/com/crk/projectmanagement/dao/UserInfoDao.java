@@ -1,9 +1,12 @@
 package com.crk.projectmanagement.dao;
 
 import com.crk.projectmanagement.entity.UserInfo;
-
 import java.util.List;
 
+/**
+ * @Author: 程荣凯
+ * @Date: 2018/5/23 14:54
+ */
 public interface UserInfoDao {
     /**
      * 查询所有用户信息

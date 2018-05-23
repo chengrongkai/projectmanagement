@@ -8,7 +8,10 @@ import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
 import java.util.Date;
-
+/**
+ * @Author: 程荣凯
+ * @Date: 2018/5/23 14:54
+ */
 @Service
 public class LoginServiceImpl implements LoginService {
     @Resource

@@ -4,10 +4,12 @@ import com.crk.projectmanagement.dao.UserInfoDao;
 import com.crk.projectmanagement.entity.UserInfo;
 import com.crk.projectmanagement.service.service.UserService;
 import org.springframework.stereotype.Service;
-
 import javax.annotation.Resource;
 import java.util.List;
-
+/**
+ * @Author: 程荣凯
+ * @Date: 2018/5/23 14:54
+ */
 @Service
 public class UserServiceImpl implements UserService {
     @Resource
