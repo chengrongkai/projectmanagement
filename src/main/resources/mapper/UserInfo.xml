@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.demo.dao.UserInfoDao">
+    <select id="queryUserInfo" resultType="com.example.demo.entity.UserInfo">
+        select * from userinfo
+        order by create_time
+    </select>
+    <select id="queryUserInfoByUserName" parameterType="java.lang.String" resultType="com.example.demo.entity.UserInfo">
+        select * from userinfo
+        where userName = #{userName}
+        order by create_time
+    </select>
+    <insert id="addUserInfo" useGeneratedKeys="true" keyColumn="userId" keyProperty="userId" parameterType="com.example.demo.entity.UserInfo">
+        insert into userinfo
+        (userName,phone,password,create_time)
+        values (#{userName},#{phone},#{password},#{createTime})
+    </insert>
+    <update id="updateUserInfoByUserName" parameterType="com.example.demo.entity.UserInfo">
+        update userinfo
+        <set>
+            <if test="password!=null">
+                password = #{password}
+            </if>
+            <if test="phone!=null">
+                phone = #{phone}
+            </if>
+            <if test="updateTime!=null">
+                update_time = #{updateTime}
+            </if>
+        </set>
+        where userName = #userName#
+    </update>
+    <delete id="deleteUserInfoByUserName" parameterType="java.lang.String">
+        delete from userinfo
+        where userName = #{userName}
+    </delete>
+</mapper>

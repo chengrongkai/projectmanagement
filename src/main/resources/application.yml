@@ -1,0 +1,13 @@
+server:
+  port: 8088
+  servlet:
+    context-path: /MyDemo
+jdbc:
+  jdbcDriver: com.mysql.jdbc.Driver
+  Url: jdbc:mysql://127.0.0.1:3306/springboot?useSSL=false&characterEncoding=utf-8
+  User: root
+  password: kai941021
+mybatis:
+  ConfigFilePath: mybatis-config.xml
+  mapperPath: /mapper/**.xml
+  entityPackage: com.example.demo.entity
